@@ -59,7 +59,7 @@ class RouteServiceProvider extends ServiceProvider
     protected function mapWebRoutes()
     {
         //Backend
-        Route::middleware('web ')
+        Route::middleware('web')
              ->prefix('admin')
              ->namespace('App\Http\Controllers\Backend')
              ->group(base_path('routes/backend.php'));
