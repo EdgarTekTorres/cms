@@ -15,10 +15,11 @@ class DatabaseSeeder extends Seeder
         
     	 App\User::create([
         	'name' => 'Edgar Tek',
-        	'email' => 'tektorresedgar@gmai.com',
+        	'email' => 'tektorresedgar@gmail.com',
         	'password' => Hash::make('Ingtek')
         ]);
 
+    	factory(App\User::class, 7)->create(); 
         App\Page::create([
         	'parent_id' => null,
         	'title' => 'Quienes Somos',
